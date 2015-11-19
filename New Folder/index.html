@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang ="en">
+   
+    <head>
+        <title>Liccy's Resume</title>
+         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <meta charset ="UTF-8">
+    <style>
+        body {
+    background-color: #BFF7FC;
+    font-size:300%
+    font-family: Times New Roman;
+    color: black;
+    
+}
+h1{
+ color: black;
+ font-size:300%
+   font-family: "Georgia", Times, serif;
+ text-decoration: underline;
+ text-transform: uppercase;
+}
+p{
+ color: black;
+ font-size:400%
+   font-family: "Times New Roman", Times, serif;
+ text-transform: uppercase;
+}
+#container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color:#19C6D5;
+  font-size:200%
+  
+}
+        </style></head>
+  <body>
+    <div class = "container">
+        <div class = "well well-sm">
+      <h1 class ="text-center">LICCY RUIZ DELGADO</h1>
+      </div>
+       
+      <div class="panel panel-info">
+          <div class="panel-heading"><h3>Objective:</h3></div>
+  <div class="panel-body">
+   <p style= "text-align:justify;">   Establish myself in a company that gives me job security, apply my knowledge and experience in administrative and operational areas of the company, and develop professionally for the good performance of assigned duties.    <p>
+  </div>
+</div>
+     
+      <ul class="nav nav-pills nav-justified">
+  <li id="boton_profile"role="presentation1" class = "active"><a href="#">Profile</a></li>
+  <li id="boton_academic-level"role="presentation2"><a href="#">Academic Level</a></li>
+  <li id="boton_work-experience"role="presentation3"><a href="#">Work Experience</a></li>
+</ul>
+       <div id="profile">
+          <ul>
+             <h3>
+                 Industrial Engineer
+             <li>Age: 24 years</li>
+             <li>Marital status: Sigle</li>
+             <li>Adreess: Cima del Chapulin #108, Cima Del Chapulin</li>
+                 <li>Email:liccy_rd2@gmail.com/liccy_02@hotmail.com/li</li>
+             
+ <div class="btn-group">
+  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+      </h3>
+          </ul>
+
+        </div>  
+       
+    <div id="academic-level">
+           <table class= "table">
+             <thead>
+               <th>College/Inst.</th>
+               <th>Mayor</th>
+               <th>Years</th>
+               </thead>
+              <tbody>
+                  <tr class="warning">
+                      <td>Centro de Bachillerato Tecnológico Industrial y de Servicios N°55</td>
+                       <td>Technical in computing</td>
+                       <td>2006-2009</td>
+                      </tr>
+                  <tr class="warning">
+                      <td>Instituto Tecnologico Superior de Panuco</td>
+                       <td>Industrial Engineer</td>
+                       <td>2009-2014</td>
+                      </tr>
+                  <tbody>
+           </table>
+           <table class= "table">
+             <thead>
+ 
+               <th>Courses and Workshop</th>
+               <th>Years</th>
+               </thead>
+              <tbody>
+                  <tr class="warning">
+                       <td>Effective Negotiation</td>
+                       <td>2011</td>
+                      </tr>
+                  <tr class="warning">
+                      <td>Management Skills Development</td>
+                       <td>2011</td>
+                      </tr>
+                  <tr class="warning">
+                      <td>Security in machinery and equipment</td>
+                       <td>2012</td>
+                      </tr>
+                   <tr class="warning">
+                      <td>Industrial Safety</td>
+                       <td>2012</td>
+                      </tr>
+                  <tr class="warning">
+                      <td>Safety Program Basic Rig Pass</td>
+                       <td>2013</td>
+                      </tr>
+                  <tbody>
+           </table>
+      </div>
+             <div id="work-experience">
+           <table class= "table">
+             <thead>
+               <th>Company</th>
+               <th>Workstation</th>
+               <th>Work Period</th>
+               <th>Activities</th>
+               </thead>
+              <tbody>
+                  <tr class="warning">
+                      <td>Dragados OFF SHORE</td>
+                       <td>Auxiliary subcontracts (Buying Department)</td>
+                       <td>June 2015-December-2015</td>
+                      <td>
+                          <ul>
+                             <li>Control and monitoring of contracts</li>
+                              <li>Revision of the estimates and invoices</li>
+                              <li>Purchase orders and treatment providers</li>
+                          </ul>
+                          </td>
+                      </tr>
+                      <tr class="warning">
+                      <td>Hotel Prados Suites</td>
+                       <td>Administrative Manager</td>
+                       <td>September 2015-Present</td>
+                      <td>
+                          <ul>
+                             <li>Management of financial resources</li>
+                              <li>management of material resources</li>
+                              <li>Treatment clients</li>
+                              <li>Staff training</li>
+                              <li>Supervision of staff activities</li>
+                          </ul>
+                          </td>
+                      </tr>
+                  <tbody>
+           </table>
+           
+      </div>
+             
+      <script>
+     $('#profile').hide()
+     $("#boton_profile").click(function(){
+        if ($('#profile').is(':hidden')){
+            console.log("click!")
+          $('#profile').slideDown('slow');
+            }else{
+            $('#profile').hide()
+                        }
+                });
+          
+    $('#academic-level').hide()
+     $('#boton_academic-level').click(function(){
+        if ($('#academic-level').is(':hidden')){
+          $('#academic-level').slideDown('slow');
+            }else{
+            $('#academic-level').hide()
+                        }
+                });
+    $('#work-experience').hide()
+     $('#boton_work-experience').click(function(){
+       if ($('#work-experience').is(':hidden')){
+         $('#work-experience').slideDown('slow');
+           }else{
+           $('#work-experience').hide()
+                        }
+                });
+      </script>
+        </div>
+ </body>
+</html>
