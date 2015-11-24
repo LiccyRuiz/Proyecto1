@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head> 
+    <title>Formulario</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    </head>
+    
+<body>
+    <h1> Formulario</h1>
+        <div id="container">
+        <div class="row">
+             <div class="col-sm-4">
+        <button id='boton'class="btn btn-success">Ver Formulario</button>
+        <div id= "formulario">
+        <form action="https://formspree.io/liccyrd2@gmail.com" method="POST">
+        <div class="from-group">
+        <label>Nombre</label>
+            <input type="text" name="Nombre" class="form-control" placeholder="Ingresa tu Nombre"></div>
+            
+            <div class="from-group">
+        <form action="https://formspree.io/liccyrd2@gmail.com"method="POST">
+        <label>Apellido</label>
+            <input type="text" name="Apellido" class="form-control" placeholder="Ingresa tu Apellido">
+               <input type='submit'> 
+                
+            </form>
+             </div>
+            <script>
+                $('#formulario').hide()
+                $('#boton').click(function(){
+                    if ($("#formulario").is(':hidden')){
+                        $("#formulario").slideDown('slow');
+                        }else{
+                        $('#formulario').hide()
+                        }
+                });
+            
+            </script>
+</body>
+</html>
