@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+   
+    <head>
+        <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    </head>
+    
+ <body>  
+     
+    <script>
+             
+        var new_Sentence = " "; 
+       function get_Sentence(){
+           var random = Math.round(Math.random()*2+1);      
+           if (random ===1){
+               var new_Sentence = "Mi sentencia 1";
+               //return new_sentence = "Mi sentencia 1";
+               $('body').append('<p>' + new_Sentence + '</p>');  
+           }
+           else if (random ===2){
+                var new_Sentence = "Mi sentencia 2";
+               //return new_sentence = "Mi sentencia 2";
+               $('body').append('<p>' + new_Sentence + '</p>');  
+           }
+           else if (random ===3){
+               var new_Sentence = "Mi sentencia 3";
+               //return new_sentence = "Mi sentencia 3";
+               $('body').append('<p>' + new_Sentence + '</p>');  
+           }
+        
+       }
+        var i=1
+        while (i <=10){
+            get_Sentence ();
+            i++;
+        }
+        
+        function triplicador(numero){
+             var result = numero * 3;
+            return result;
+        
+            
+        }
+        
+        
+        
+        
+            </script>
+            
+
+</body>
+</html>
