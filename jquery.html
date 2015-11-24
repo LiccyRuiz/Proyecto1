@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>HTML Document</title>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+
+</head>
+<body>
+<div id="everything">
+      <h1>A heading!</h1>
+      <p>Here's some text!</p>
+      <p>Here's a second set of text!</p>
+      <div class="holder">
+          <ul>
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+          </ul>
+      </div>
+      <div class="holder">
+          <ol>
+              <li>List Item 4</li>
+              <li>List Item 5</li>
+              <li>List Item 6</li>
+          </ol>
+      </div>
+      <div id="change-me">This part needs to change!</div>
+      <div id="secret">We should hide this!</div>
+  </div>
+  <script>
+     
+      //var tema = prompt('Elige el tema para la pagina web(red, green, blue)?);
+                        
+      var theme = '';
+     
+      
+      var theme= prompt('Elige un color de tema');
+      
+      if (theme!=='green' && theme!=='blue'&& theme!=='red'){
+          
+           
+          var isnt_valid_theme = true;
+              
+          while (isnt_valid_theme){
+          
+          var theme= prompt ('Elige un color de tema valido (Green, Blue, Red)');
+              
+              if(theme ==='green'|| theme ==='blue'|| theme ==='red'){
+                alert('El color de tema es valido '+theme);
+                  var isnt_valid_theme = false;
+                  }
+          }
+      }
+      
+     console.log(theme);   
+      
+  //var a = 4;
+  //console.log(a)
+      
+      
+      if (theme ==='red'){
+      $('h1').css('color','blue');
+      $('body').css('background','red');
+      $('#everything').css('font-size','200%');
+      $('.holder').css('border','2px solid black');
+      $('ul li').css('font-weight','bold');
+      $('h1+p').css('color','green');
+      $('#secret').css('display','block');
+      $('#change-me').text('Changed! ');
+      $('#change-me').append('More text!');
+      $('#change-me').html('<p>Parrafo 1</P><p>Parrafo 2</p>');
+      $('#change-me').append('<p>Nuevo Parrafo</p>');
+      $('li').text('Nueva Sentencia  ');
+      $('li').append('Nuevo Texto');
+      $('#everything').append('<ol><li>Item 1</li><li>Item 2</li><li>Item 3</li></ol>');
+       $('#change-me').hade('');
+      }
+         if (theme ==='blue'){
+      $('h1').css('color','yellow');
+      $('body').css('background','blue');
+      $('#everything').css('font-size','200%');
+      $('.holder').css('border','2px solid black');
+      $('ul li').css('font-weight','bold');
+      $('h1+p').css('color','green');
+      $('#secret').css('display','block');
+      $('#change-me').text('Changed! ');
+      $('#change-me').append('More text!');
+      $('#change-me').html('<p>Parrafo 1</P><p>Parrafo 2</p>');
+      $('#change-me').append('<p>Nuevo Parrafo</p>');
+      $('li').text('Nueva Sentencia  ');
+      $('li').append('Nuevo Texto');
+      $('#everything').append('<ol><li>Item 1</li><li>Item 2</li><li>Item 3</li></ol>');
+       $('#change-me').hade('');
+      }
+      
+         if (theme ==='green'){
+      $('h1').css('color','blue');
+      $('body').css('background','green');
+      $('#everything').css('font-size','200%');
+      $('.holder').css('border','2px solid black');
+      $('ul li').css('font-weight','bold');
+      $('h1+p').css('color','green');
+      $('#secret').css('display','block');
+      $('#change-me').text('Changed! ');
+      $('#change-me').append('More text!');
+      $('#change-me').html('<p>Parrafo 1</P><p>Parrafo 2</p>');
+      $('#change-me').append('<p>Nuevo Parrafo</p>');
+      $('li').text('Nueva Sentencia  ');
+      $('li').append('Nuevo Texto');
+      $('#everything').append('<ol><li>Item 1</li><li>Item 2</li><li>Item 3</li></ol>');
+      $('#change-me').hade('');
+      }
+      
+  </script>
+</body>
+</html>
