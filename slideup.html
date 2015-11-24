@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>slideUp</title>
+  <style>
+      
+      
+  div {
+    background:red;
+    margin: 10px;
+    width: 100px;
+    height: 80px;
+    float: center;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+Click me!
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+    
+    
+<script>
+$( document.body ).click(function() {
+  if ( $( "div:first" ).is( ":hidden" ) ) {
+    $( "div" ).show( "slow" );
+  } else {
+    $( "div" ).slideUp();
+  }
+});
+</script>
+</body>
+</html>
