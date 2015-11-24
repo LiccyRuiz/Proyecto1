@@ -1,4 +1,4 @@
-Basic knowledge of: HTML,CSS,JavaScript ,Libraries as Bootstrap and jQuery,
+Basic knowledge of: HTML, CSS, JavaScript, Libraries as Bootstrap and jQuery,
 Ajax & Json, 
 Applying functions, events, arrays, objects, shapes and positions among others.
 Software platforms like github and cloud9.
